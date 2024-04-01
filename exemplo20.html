@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<html>
+<body onkeydown="MexeOMingau(event)", style="background-color: beige;">
+    <audio id="a1" controls style="width: 0px" preload="auto">
+        <source src="./piano/040.wav">
+    </audio>
+    <audio id="b1" controls style="width: 0px" preload="auto">
+        <source src="./piano/041.wav">
+    </audio>
+
+    <audio id="a2" controls style="width: 0px" preload="auto">
+        <source src="./piano/042.wav">
+    </audio>
+    <audio id="b2" controls style="width: 0px" preload="auto">
+        <source src="./piano/043.wav">
+    </audio>
+
+    <audio id="a3" controls style="width: 0px" preload="auto">
+        <source src="./piano/044.wav">
+    </audio>
+
+    <audio id="a4" controls style="width: 0px" preload="auto">
+        <source src="./piano/045.wav">
+    </audio>
+    <audio id="b4" controls style="width: 0px" preload="auto">
+        <source src="./piano/046.wav">
+    </audio>
+
+    <audio id="a5" controls style="width: 0px" preload="auto">
+        <source src="./piano/047.wav">
+    </audio>
+    <audio id="b5" controls style="width: 0px" preload="auto">
+        <source src="./piano/048.wav">
+    </audio>
+
+    <audio id="a6" controls style="width: 0px" preload="auto">
+        <source src="./piano/049.wav">
+    </audio>
+    <audio id="b6" controls style="width: 0px" preload="auto">
+        <source src="./piano/050.wav">
+    </audio>
+
+    <audio id="a7" controls style="width: 0px" preload="auto">
+        <source src="./piano/051.wav">
+    </audio>
+
+    <audio id="a8" controls style="width: 0px" preload="auto">
+        <source src="./piano/052.wav">
+    </audio>
+    <audio id="house" controls style="width: 0px" preload="auto">
+        <source src="./piano/house.mp3">
+    </audio>
+    
+
+    <audio id="house" controls style="width: 0px" preload="auto">
+        <source src="./piano/house.mp3">
+    </audio>
+    <audio id="all" controls style="width: 0px" preload="auto">
+        <source src="./piano/allAboard.mp3">
+    </audio>
+    <audio id="kadoc" controls style="width: 0px" preload="auto">
+        <source src="./piano/Kadoc.mp3">
+    </audio>
+    <audio id="nando" controls style="width: 0px" preload="auto">
+        <source src="./piano/Fernando.mp3">
+    </audio>
+
+
+    <p style="margin-left: 20px;">
+    <button onclick="donota()" style="position:absolute;left:125px;width:50px;height:190px;background-color:white">C</button>
+    <button onclick="renota()" style="position:absolute;left:175px;width:50px;height:190px;background-color:white">D</button>
+    <button onclick="minota()" style="position:absolute;left:225px;width:50px;height:190px;background-color:white">E</button>
+    <button onclick="fanota()" style="position:absolute;left:275px;width:50px;height:190px;background-color:white">F</button>
+    <button onclick="solnota()" style="position:absolute;left:325px;width:50px;height:190px;background-color:white">G</button>
+    <button onclick="lanota()" style="position:absolute;left:375px;width:50px;height:190px;background-color:white">A</button>
+    <button onclick="sinota()" style="position:absolute;left:425px;width:50px;height:190px;background-color:white">B</button>
+    <button onclick="do2nota()" style="position:absolute;left:475px;width:50px;height:190px;background-color:white">C</button>
+    
+    <button onclick="dosus()" style="position:absolute;left:164px;width:22px;height:100px;background-color:black">C</button>
+    <button onclick="resus()" style="position:absolute;left:214px;width:22px;height:100px;background-color:black">D</button>
+    <button onclick="fasus()" style="position:absolute;left:314px;width:22px;height:100px;background-color:black">F</button>
+    <button onclick="solsus()" style="position:absolute;left:364px;width:22px;height:100px;background-color:black">G</button>
+    <button onclick="lasusnota()" style="position:absolute;left:414px;width:22px;height:100px;background-color:black">A</button>
+    </p>
+
+    <br><br><br>
+    <p style="margin-left: 130px; position:absolute; margin-top: 200px;">
+    <button onclick="house()" style="width: 70px; height: 50px; background-color: rgb(200, 255, 127);">House</button>
+    <button onclick="musica()" style="width: 70px; height: 50px;background-color: rgb(255, 242, 127)">Música</button>
+    <button onclick="Voice1()" style="width: 70px; height: 50px; background-color: darkolivegreen;">Voice1</button>
+    <button onclick="Voice2()" style="width: 70px; height: 50px; background-color: darkolivegreen;">Voice2</button>
+    <button onclick="Stop()" style="width: 70px; height: 50px; background-color: red;">Stop</button>
+    </p>
+ 
+
+<script>
+    function donota(){
+        document.getElementById('a1').pause();
+        document.getElementById('a1').currentTime=0;
+        document.getElementById('a1').play();
+    }
+    function dosus(){
+        document.getElementById('b1').pause();
+        document.getElementById('b1').currentTime=0;
+        document.getElementById('b1').play();
+    }
+    function renota(){
+        document.getElementById('a2').pause();
+        document.getElementById('a2').currentTime=0;
+        document.getElementById('a2').play();
+    }
+    function resus(){
+        document.getElementById('b2').pause();
+        document.getElementById('b2').currentTime=0;
+        document.getElementById('b2').play();
+    }
+    function minota(){
+        document.getElementById('a3').pause();
+        document.getElementById('a3').currentTime=0;
+        document.getElementById('a3').play();
+    }
+    
+    function fanota(){
+        document.getElementById('a4').pause();
+        document.getElementById('a4').currentTime=0;
+        document.getElementById('a4').play();
+    }
+    function fasus(){
+        document.getElementById('b4').pause();
+        document.getElementById('b4').currentTime=0;
+        document.getElementById('b4').play();
+    }
+    function solnota(){
+        document.getElementById('a5').pause();
+        document.getElementById('a5').currentTime=0;
+        document.getElementById('a5').play();
+    }
+    function solsus(){
+        document.getElementById('b5').pause();
+        document.getElementById('b5').currentTime=0;
+        document.getElementById('b5').play();
+    }
+    function lanota(){
+        document.getElementById('a6').pause();
+        document.getElementById('a6').currentTime=0;
+        document.getElementById('a6').play();
+    }
+    function lasusnota(){
+        document.getElementById('b6').pause();
+        document.getElementById('b6').currentTime=0;
+        document.getElementById('b6').play();
+    }
+    function sinota(){
+        document.getElementById('a7').pause();
+        document.getElementById('a7').currentTime=0;
+        document.getElementById('a7').play();
+    }
+    function do2nota(){
+        document.getElementById('a8').pause();
+        document.getElementById('a8').currentTime=0;
+        document.getElementById('a8').play();
+    }
+
+
+
+    function house(){
+        document.getElementById('house').pause();
+        document.getElementById('house').currentTime=0;
+        document.getElementById('house').play();
+    }
+
+    function acordeDo(){
+        document.getElementById('a1').pause();
+        document.getElementById('a1').currentTime=0;
+        document.getElementById('a1').play();
+
+        document.getElementById('a3').pause();
+        document.getElementById('a3').currentTime=0;
+        document.getElementById('a3').play();
+
+        document.getElementById('a5').pause();
+        document.getElementById('a5').currentTime=0;
+        document.getElementById('a5').play();
+    }
+
+    function acordeRe(){
+        document.getElementById('a2').pause();
+        document.getElementById('a2').currentTime=0;
+        document.getElementById('a2').play();
+
+        document.getElementById('a4').pause();
+        document.getElementById('a4').currentTime=0;
+        document.getElementById('a4').play();
+
+        document.getElementById('a6').pause();
+        document.getElementById('a6').currentTime=0;
+        document.getElementById('a6').play();
+    }
+
+
+    function musica(){
+        document.getElementById('kadoc').pause();
+        document.getElementById('kadoc').currentTime=0;
+        document.getElementById('kadoc').play();
+    }function Voice2(){
+        document.getElementById('all').pause();
+        document.getElementById('all').currentTime=0;
+        document.getElementById('all').play();
+    }function Voice1(){
+        document.getElementById('nando').pause();
+        document.getElementById('nando').currentTime=0;
+        document.getElementById('nando').play();
+    }
+
+    function Stop(){
+        document.getElementById('house').pause();
+        document.getElementById('kadoc').pause();
+    }
+
+    function MexeOMingau(event){
+        var key = event.keyCode;
+        console.log(key)
+        if (key==67) //tecla do C
+        donota();
+
+        if (key==68) //tecla do D
+        renota();
+
+        if (key==69) //tecla do E
+        minota();
+
+        if (key==70) //tecla do F
+        fanota();
+
+        if (key==71) //tecla do G
+        solnota();
+
+        if (key==65) //tecla do A
+        lanota();
+
+        if (key==66) //tecla do B
+        sinota();
+
+        if (key==83) //tecla do S
+        do2nota();
+
+        if (key==97) //tecla do C#
+        dosus();
+        if (key==98) //tecla do D#
+        resus();
+        if (key==99) //tecla do F#
+        fasus();
+        if (key==100) //tecla do G#
+        solsus();
+        if (key==101) //tecla do A#
+        lasusnota();
+
+    }
+
+</script>
+</body>
+</html>
